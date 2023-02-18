@@ -125,6 +125,9 @@ section > .container{
     font-weight: 700;
 }
 
+#personal-info .hidden {
+    display: none;
+}
 
 #target h1, #personal-info h1 {
     margin: 20px 0px;
@@ -150,6 +153,19 @@ section > .container{
     display: inline-block;
     color: #1DA1F2;
     padding: 3px;
+}
+
+.personal-confirm {
+    padding-bottom: 1rem;
+}
+#confirmForm .confirm-msg {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.msg-error {
+    color: #ff0000;
 }
 
 /* End Target, Personal info */

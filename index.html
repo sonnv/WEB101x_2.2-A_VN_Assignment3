@@ -78,27 +78,48 @@
           <div class="col-md-6">
             <div id="personal-info">
               <h1 class="section-title">Thông tin cá nhân</h1>
-              <ul class="mt-40 info">
-                <li class="my-1"><span>Giới tính</span> : Nam</li>
-                <li class="my-1"><span>Điện thoại</span> : (+84) 912398xxx</li>
-                <li class="my-1"><span>Email</span> : sinhvien@funix.edu.vn</li>
-                <li class="my-1"><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
-                <li class="my-1"><span>Website</span> : https://abc.tech</li>
-              </ul>
-              <ul class="social">
-                <li class="social-item">
-                  <i class="icon-twitter"></i>
-                </li>
-                <li class="social-item">
-                  <i class="icon-facebook"></i>
-                </li>
-                <li class="social-item">
-                  <i class="icon-gplus"></i>
-                </li>
-                <li class="social-item">
-                  <i class="icon-linkedin"></i>
-                </li>
-              </ul>
+              <div class="personal-info-detail hidden">
+                <ul class="mt-40 info">
+                  <li class="my-1"><span>Giới tính</span> : Nam</li>
+                  <li class="my-1"><span>Điện thoại</span> : (+84) 912398xxx</li>
+                  <li class="my-1"><span>Email</span> : sinhvien@funix.edu.vn</li>
+                  <li class="my-1"><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
+                  <li class="my-1"><span>Website</span> : https://abc.tech</li>
+                </ul>
+                <ul class="social">
+                  <li class="social-item">
+                    <i class="icon-twitter"></i>
+                  </li>
+                  <li class="social-item">
+                    <i class="icon-facebook"></i>
+                  </li>
+                  <li class="social-item">
+                    <i class="icon-gplus"></i>
+                  </li>
+                  <li class="social-item">
+                    <i class="icon-linkedin"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="personal-confirm">
+                <form class="row" id="confirmForm" onsubmit="return false;">
+                  <div class="confirmEmail">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="confirm-email"
+                      placeholder="Enter email"
+                      required
+                    />
+                    <span class="confirm-msg">Hãy nhập email để xác thực</span>
+                  </div>
+                  <div class="btn-form-submit">
+                    <button id="btn-form-submit" class="btn btn-primary" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -475,5 +496,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
