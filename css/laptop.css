@@ -1,0 +1,33 @@
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+    section > .container{
+        width: 1170px;
+        margin: auto;
+        display: block;
+    }
+
+    /* Navigation - show avatar with screen laptop */
+    #nav-bar .nav-item img {
+        width: 150px;
+        border-radius: 50%;
+        position: absolute;
+        border: 10px solid #fff;
+        top: -75px;
+        left: 0;
+    }
+    #nav-bar .navbar-nav  li:nth-child(3) {
+        height: 100%;
+        position: relative;
+        width: 160px;
+        margin: 0px 10px;
+
+    }
+
+    /* End Navigation - show avatar with screen laptop */
+    
+    #personal-info {
+        padding-left: 50px;
+    }
+    
+}

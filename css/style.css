@@ -1,6 +1,16 @@
 * {
     margin: 0px;
+    box-sizing: border-box;
 }
+
+*::after, *::before{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -11,19 +21,6 @@ body {
 .bg-grey {
     background: #f7f7f7;
 }
-
-section > .container{
-    width: 1170px;
-    margin: auto;
-    display: block;
-
-    padding: 30px 50px;
-}
-
-#nav-bar {
-    text-align: center;
-}
-
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
@@ -56,19 +53,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* End Banner */
 
-/* Begin Nav */
-#nav-bar .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    position: relative;
-}
+/* Begin Navigation */
 
 #nav-bar .container a {
     display: inline-block;
 }
+
 #nav-bar .container a {
     border-left: 1px solid #bdbdbd;
     text-decoration: none;
@@ -77,30 +67,21 @@ h1,h2,h3,h4,h5,h6 {
     padding:20px 15px;
 }
 
-#nav-bar .container a:nth-child(2) {
-    margin-right: 400px;
-}
 
 #nav-bar .container a i {
     color: #1DA1F2;
 }
-#nav-bar .container img {
-    width: 150px;
-    border-radius: 50%;
-    position: absolute;
-    border: 10px solid #fff;
-    top: -75px;
-    left: 500px;
-}
-/* End Nav */
+
+/* End Navigation */
 
 
 /* Begin Target, Personal info */
-#about .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: start;
-    align-content: center;
+
+#about::before{
+    display: block;
+    content: '';
+    height: 60px;
+
 }
 
 #about .section-title {
@@ -108,9 +89,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
 
-#target {
-    padding-right: 50px;
-}
+
 #target h1, #personal-info h1 {
     margin: 20px 0px;
     color: #000000;
@@ -120,11 +99,6 @@ h1,h2,h3,h4,h5,h6 {
     text-align: justify;
     line-height: 1.6em;
 }
-
-#personal-info {
-    padding-left: 50px;
-}
-
 #personal-info ul {
     list-style: none;
     margin: 0px;
@@ -132,34 +106,20 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.6em;
 }
 
-#personal-info .info li {
-    padding-bottom: 5px;
-}
-
 #personal-info .info span{
     font-weight: 600;
 }
 
-#personal-info .social {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: left;
-}
-
 #personal-info .social li {
+    display: inline-block;
     color: #1DA1F2;
     padding: 3px;
 }
+
 /* End Target, Personal info */
 
+
 /* Begin  Job Info*/
-#job-info .container {
-    display: grid;
-    grid-template-columns: repeat( 3, 1fr);
-    grid-gap: 30px;
-}
 
 #job-info .job-item {
     padding: 40px 20px;
@@ -254,49 +214,20 @@ h1,h2,h3,h4,h5,h6 {
 #certificate .section-title {
     font-weight: 700;
     font-size: 25px;
-    margin: 30px 0px;
+    margin: 30px 0px 0px;
     color: #555555;
 }
-#certificate .certificate-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    gap: 10px;
-    min-height: 0;    
-}
-
-.certificate-items .item {
-    display: flex;
-    flex-direction: row;
-    text-align: start;
-}
-
-.certificate-items .item .certicate-img img{
-    max-width: 230px;
-    display: block;
-}
-
-.certificate-items .item .certicate-content {
-    flex: 1 1 auto;
-    margin-left: 20px;
-}
 
 .certificate-items {
-    margin-top: 50px;
-}
-
-.certificate-items .item:nth-child(2) {
-    border-left: 1px solid #d6c08d;
-    padding-left: 20px;
-}
-
-.certificate-items {
-    padding-bottom: 50px;
     border-bottom: 1px solid #d6c08d;
 }
 
 .certificate-items:last-child {
     border-bottom: none;
+}
+
+.certicate-content {
+    padding-top: 10px;
 }
 
 .certicate-content h3 {
@@ -309,20 +240,13 @@ h1,h2,h3,h4,h5,h6 {
 /* End certificate */
 
 /* Begin Project */
-.project-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.project-items .project-img img {
-    max-width: 375px;
-    display: block;
-}
 
 .project-item {
     border: 1px solid #CCCCCC;
+    padding-left: 0;
+    padding-right: 0;
 }
+
 
 .project-item .project-name {
     text-transform: uppercase;

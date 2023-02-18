@@ -1,0 +1,20 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+    #nav-bar .container a{
+        border-left: none;
+    }
+
+    #personal-info {
+        padding-left: 0px;
+    }
+
+    #target {
+        padding-right: 0px;
+    }
+
+    #nav-bar .container a {
+        padding-left: 0px;
+    }
+    
+}
