@@ -15,5 +15,13 @@
     #footer ul {
         padding-left: 0px !important;
     }
+
+    .hidden {
+        display: none;
+    }
+
+    .viewMore {
+        padding-top: 20px;
+    }
 }
   

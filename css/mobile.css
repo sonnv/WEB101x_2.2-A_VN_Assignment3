@@ -23,4 +23,8 @@
     #certificate .certificate-items {
         padding-bottom: 0px !important;
     }
+
+    .viewMore{
+        display: none;
+      }
 }

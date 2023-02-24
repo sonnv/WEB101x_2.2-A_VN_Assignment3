@@ -19,3 +19,35 @@ submitBtn.addEventListener('click',function(){
         } 
     }
 });
+
+
+const jobItemAry = document.querySelectorAll(".job-item");
+
+if(jobItemAry.length){
+    for(let i = 0; i < jobItemAry.length; i++){
+        let jobItem = jobItemAry[i];
+        let btnViewMore = jobItem.querySelector(".btn-viewMore");
+        let btnViewLess = jobItem.querySelector(".btn-viewLess");
+        if(btnViewMore && btnViewLess){
+            jobItem.addEventListener("mouseover",function(){
+                if(btnViewLess.classList.contains("hidden")){
+                    btnViewMore.classList.remove("hidden");
+                }
+            });
+            jobItem.addEventListener("mouseout",function(){
+                btnViewMore.classList.add("hidden");
+            });
+
+            btnViewMore.addEventListener("click",function(){
+                jobItem.querySelector(".job-detail").classList.remove("hidden");
+                btnViewLess.classList.remove("hidden");
+                btnViewMore.classList.add("hidden");
+            });
+
+            btnViewLess.addEventListener("click",function(){
+                jobItem.querySelector(".job-detail").classList.add("hidden");
+                btnViewLess.classList.toggle("hidden");
+            });
+        }        
+    }
+}

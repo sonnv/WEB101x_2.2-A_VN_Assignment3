@@ -174,7 +174,7 @@ section > .container{
 /* Begin  Job Info*/
 
 #job-info .job-item {
-    padding: 40px 20px;
+    padding: 40px 20px 10px;
     text-align: justify;
     border: 1px solid #bdbdbd;
     border-radius: 10px;
