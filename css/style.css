@@ -367,3 +367,78 @@ section > .container{
 }
 
 /* End Footer */
+
+/* Project charter */
+
+#project-detail {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+#project-detail .container {
+    background-color: #1DA1F2;
+}
+
+
+#project-detail .bg-shiro {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+#project-detail h2.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0075b4;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #666666;
+}
+
+/* Project Goal */
+
+.goal-item h4,.project-members h4, .project-timeline h4 {
+    font-weight: 600;
+}
+
+.project-goal .row {
+    border-bottom: 1px solid #bdbdbd;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Project Scope */
+
+.project-scopes h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.scope-in, .scope-out {
+    text-align: justify;
+}
+
+.project-timeline span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #d6c08d;
+    line-height: 50px;
+}
+
+.timeline {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px dotted #bdbdbd;
+}
+
+/* Change size icon */
+.f-size {
+    font-size: 1.5rem;
+}
+
+.goal-img, .team-img, .primary-img {
+    text-align: center;
+}
